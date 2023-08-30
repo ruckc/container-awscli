@@ -49,7 +49,7 @@ jobs:
           tags: |
             type=ref,event=branch
             type=ref,event=pr
-            type=raw,pattern=${{ env.AWS_CLI_VERSION }}
+            type=raw,value=${{ env.AWS_CLI_VERSION }}
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image
