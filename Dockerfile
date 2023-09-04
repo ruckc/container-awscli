@@ -1,4 +1,4 @@
-FROM docker.io/library/ubuntu:jammy-20230804
+FROM docker.io/library/ubuntu:jammy-20230816
 
 RUN apt-get update && \
     apt-get install curl unzip -y && \
